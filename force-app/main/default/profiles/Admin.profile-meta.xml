@@ -25,6 +25,11 @@
         <field>OpenAI_Settings__mdt.Token__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpenAI_Settings__mdt.Violation_message__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>OpenAI_Settings__mdt-OpenAI Setting Layout</layout>
     </layoutAssignments>
