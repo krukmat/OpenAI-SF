@@ -12,6 +12,11 @@
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
+        <field>OpenAI_Settings__mdt.Moderation_score__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>OpenAI_Settings__mdt.Organization_ID__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -25,10 +30,6 @@
     </layoutAssignments>
     <tabVisibilities>
         <tab>OpenAI</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-home</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <userLicense>Salesforce</userLicense>
