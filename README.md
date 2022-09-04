@@ -1,8 +1,7 @@
 # OpenAI - Salesforce
-Implementation of [OpenAI API](https://beta.openai.com/docs/api-reference/introduction)  
-in Salesforce.
+Implementation of [OpenAI API](https://beta.openai.com/docs/api-reference/introduction) in Salesforce.
 ## Contents: 
-1. Apex to do the callout 
+1. Apex to do the callout (only completion callout so far)
 2. Screen flow to invoke the apex @Invocable 
 3. Custom metadata type to add the token + orgID + ...
 ## Intention:
