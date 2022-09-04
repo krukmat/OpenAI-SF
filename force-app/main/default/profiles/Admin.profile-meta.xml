@@ -10,6 +10,19 @@
         <enabled>true</enabled>
     </classAccesses>
     <custom>false</custom>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpenAI_Settings__mdt.Organization_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpenAI_Settings__mdt.Token__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <layoutAssignments>
+        <layout>OpenAI_Settings__mdt-OpenAI Setting Layout</layout>
+    </layoutAssignments>
     <tabVisibilities>
         <tab>OpenAI</tab>
         <visibility>DefaultOn</visibility>
