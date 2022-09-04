@@ -1,6 +1,6 @@
 public with sharing class OpenAI {
     private static Decimal maxCat = -1;
-    private static final OpenAI_Settings__mdt setup = [SELECT Moderation_Score__c, Organization_ID__c, Token__c FROM OpenAI_Settings__mdt][0];
+    private static final OpenAI_Settings__mdt setup = [SELECT Violation_message__c, Moderation_Score__c, Organization_ID__c, Token__c FROM OpenAI_Settings__mdt][0];
     public abstract class Body {
     }
     public class BodyCompletion extends Body{
@@ -102,7 +102,7 @@ public with sharing class OpenAI {
         OpenAI.BodyModeration body = new OpenAI.BodyModeration();
         body.input = feed.body;
         if (doModerationEvaluation(body)){
-            feed.body = 'Erased content due to violation of community rules';
+            feed.body = setup.Violation_message__c;
             update feed;
         }
     }
@@ -114,7 +114,7 @@ public with sharing class OpenAI {
         OpenAI.BodyModeration body = new OpenAI.BodyModeration();
         body.input = feed.commentBody;
         if (doModerationEvaluation(body)){
-            feed.commentBody = 'Erased content due to violation of community rules';
+            feed.commentBody = setup.Violation_message__c;
             update feed;
         }
     }
